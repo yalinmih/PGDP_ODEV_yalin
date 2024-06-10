@@ -1,13 +1,17 @@
-package odevler.chapter01;
+package odevler.chapter02;
+
+import java.util.Scanner;
 
 public class Q07 {
     public static void main(String[] args) {
-        double a = 4 * (1.0 - ((double) 1 / 3) + ((double) 1 / 5) - ((double) 1 / 7) +
-                ((double) 1 / 9) - ((double) 1 / 11));
-        System.out.println(a);
+        Scanner input = new Scanner(System.in);
 
-        double b = 4 * (1.0 - ((double) 1 / 3) + ((double) 1 / 5) - ((double) 1 / 7) +
-                ((double) 1 / 9) - ((double) 1 / 11) + ((double) 1 / 13));
-        System.out.println(b);
+        System.out.print("Enter the number of minutes: ");
+        int min = input.nextInt();
+
+        int year = min / (60 * 24 * 365);
+        int day = (min / (60 * 24)) % 365;
+
+        System.out.println(min + " minutes is approximately " + year + " years and " + day + " days");
     }
 }

@@ -1,11 +1,19 @@
-package odevler.chapter01;
+package odevler.chapter02;
+
+import java.util.Scanner;
 
 public class Q10 {
     public static void main(String[] args) {
-        double totalMile = 14 / 1.6;
-        double totalHours = 45.5 / 60;
+        Scanner input = new Scanner(System.in);
 
-        double average = totalMile / totalHours;
-        System.out.println(average);
+        System.out.print("Enter the amount of water in kilograms: ");
+        double waterKg = input.nextDouble();
+        System.out.print("Enter the initial temperature: ");
+        double initialTemp = input.nextDouble();
+        System.out.print("Enter the final temperature: ");
+        double finalTemp = input.nextDouble();
+
+        double energy = waterKg * (finalTemp - initialTemp) * 4184;
+        System.out.println("The energy needed is " + energy);
     }
 }

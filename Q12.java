@@ -1,11 +1,16 @@
-package odevler.chapter01;
+package odevler.chapter02;
+
+import java.util.Scanner;
 
 public class Q12 {
     public static void main(String[] args) {
-        double totalKm = 24 * 1.6;
-        double totalTime = 1 + ((double) 40 / 60) + ((double) 35 / 3600);
+        Scanner input = new Scanner(System.in);
 
-        double average = totalKm / totalTime;
-        System.out.println(average);
+        System.out.print("Enter speed and acceleration: ");
+        double speed = input.nextDouble();
+        double acc = input.nextDouble();
+
+        double length = Math.pow(speed, 2) / (2 * acc);
+        System.out.println("The minimum runway length for this airplane is " + length);
     }
 }
