@@ -1,4 +1,4 @@
-package odevler.chapter02;
+package odevler.chapter02.Chapter02;
 
 import java.util.Scanner;
 

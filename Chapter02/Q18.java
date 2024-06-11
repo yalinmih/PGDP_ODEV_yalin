@@ -1,4 +1,4 @@
-package odevler.chapter02;
+package odevler.chapter02.Chapter02;
 
 public class Q18 {
     public static void main(String[] args) {
