@@ -17,5 +17,5 @@ public class Q23 {
         System.out.println("The cost of driving is " + cost);
     }
 }
-
+//
 
