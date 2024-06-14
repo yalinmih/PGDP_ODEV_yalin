@@ -1,6 +1,6 @@
 package odevler.chapter02.Chapter01;
 
-public class A08 {
+public class Q08 {
     public static void main(String[] args) {
         double r = 5.5;
         final double PI = Math.PI;

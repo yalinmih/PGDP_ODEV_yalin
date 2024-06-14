@@ -1,6 +1,6 @@
 package odevler.chapter02.Chapter01;
 
-public class A13 {
+public class Q13 {
     public static void main(String[] args) {
         double a = 3.4;
         double b = 50.2;

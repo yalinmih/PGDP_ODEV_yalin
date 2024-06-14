@@ -1,6 +1,6 @@
 package odevler.chapter02.Chapter01;
 
-public class A11 {
+public class Q11 {
     public static void main(String[] args) {
         int population = 312_032_486;
         double totalSeconds = 365 * 24 * 60 * 60;
