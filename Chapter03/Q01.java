@@ -20,8 +20,8 @@ public class Q01 {
         else if(discriminant == 0) {
             double root1 = -b / (2 * a);
             System.out.println("The equation has one root " + root1);
-
-        } else {
+        }
+        else {
             System.out.println("The equation has no real roots");
         }
     }
