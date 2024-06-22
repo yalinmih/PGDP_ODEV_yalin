@@ -22,9 +22,9 @@ public class Q09 {
                 (d6 * 6) + (d7 * 7) + (d8 * 8) + (d9 * 9)) % 11;
 
         if (checksum == 10) {
-            System.out.println(isbn + "X");
+            System.out.println("The ISBN-10 number is " + isbn + "X");
         } else {
-            System.out.println(isbn + "" + checksum);
+            System.out.println("The ISBN-10 number is " + isbn + checksum);
         }
     }
 }
