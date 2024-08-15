@@ -11,12 +11,16 @@ public class Q21 {
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.toUpperCase().charAt(i);
-
+            if (c >= 'A' && c <= 'Z') {
+                int num = getNumber(c);
+                System.out.print(num + "");
+            } else {
+                System.out.print(c + "");
+            }
         }
-
-
     }
-    int getNumber(char uppercaseLetter) {
+
+    public static int getNumber(char uppercaseLetter) {
         return switch (uppercaseLetter) {
             case 'A', 'B', 'C' -> 2;
             case 'D', 'E', 'F' -> 3;
