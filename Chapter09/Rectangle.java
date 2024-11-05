@@ -1,7 +1,5 @@
 package odevler.chapter02.Chapter09;
 
-//final yapilmali mi sor
-
 public class Rectangle {
     private double width;
     private double height;
