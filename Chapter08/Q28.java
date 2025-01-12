@@ -10,21 +10,22 @@ public class Q28 {
         int[][] list2 = new int[3][3];
 
         System.out.print("Enter list1: ");
-        for (int i = 0; i < list1.length; i++) {
-            for (int j = 0; j < list1[i].length; j++) {
-                list1[i][j] = input.nextInt();
-            }
-        }
+        fillMatrixWithUserInput(list1, input);
         System.out.print("Enter list2: ");
-        for (int i = 0; i < list2.length; i++) {
-            for (int j = 0; j < list2[i].length; j++) {
-                list2[i][j] = input.nextInt();
-            }
-        }
+        fillMatrixWithUserInput(list2, input);
+
         if (equals(list1, list2)) {
             System.out.println("The two arrays are strictly identical");
         } else {
             System.out.println("The two arrays are not strictly identical");
+        }
+    }
+
+    private static void fillMatrixWithUserInput(int[][] list1, Scanner input) {
+        for (int i = 0; i < list1.length; i++) {
+            for (int j = 0; j < list1[i].length; j++) {
+                list1[i][j] = input.nextInt();
+            }
         }
     }
 
